@@ -167,7 +167,7 @@ void fluid_tuning_set_octave(fluid_tuning_t *tuning, const double *pitch_deriv)
 
     for(i = 0; i < 128; i++)
     {
-        tuning->pitch[i] = i * 100.0 + pitch_deriv[i % 12];
+        tuning->pitch[i] = i * 100.0 + pitch_deriv[i % 31];
     }
 }
 
